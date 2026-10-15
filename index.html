@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agoodshop · Carrito</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="carrito">
+    <section class="productos">
+      <h1>Productos</h1>
+      <p id="estado">Cargando productos…</p>
+      <table>
+        <thead>
+          <tr><th>Producto</th><th>Cantidad</th><th>Unidad</th><th>Total</th></tr>
+        </thead>
+        <tbody id="lista-productos"></tbody>
+      </table>
+    </section>
+
+    <aside class="resumen">
+      <h2>Total</h2>
+      <ul id="resumen-productos"></ul>
+      <p class="total">TOTAL <strong id="total">0.00 €</strong></p>
+    </aside>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
