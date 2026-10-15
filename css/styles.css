@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  background: #f4f4f6;
+  color: #222;
+}
+
+.carrito {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.productos {
+  flex: 2 1 500px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.resumen {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 0.75rem 0.5rem; text-align: left; border-bottom: 1px solid #e5e5e5; }
+th { font-size: 0.85rem; color: #666; }
+td small { color: #888; }
+
+td button {
+  width: 2rem; height: 2rem;
+  border: 1px solid #ccc; background: #fafafa;
+  border-radius: 4px; cursor: pointer;
+}
+td input {
+  width: 3.5rem; height: 2rem;
+  margin: 0 0.25rem; text-align: center;
+}
+
+.resumen ul { list-style: none; padding: 0; }
+.resumen li { padding: 0.4rem 0; border-bottom: 1px dashed #ddd; }
+.total { display: flex; justify-content: space-between; font-size: 1.2rem; margin-top: 1rem; }
